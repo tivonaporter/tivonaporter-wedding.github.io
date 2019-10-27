@@ -15,6 +15,10 @@
   --bgcolor: var(--colortanlight);
   --bgcolorpink: var(--colorpinklight);
   --bgcolorgreen: var(--colorgreenlight);
+  --btncolor: var(--colorpinkdark);
+  --btnhovercolor: var(--colorpink);
+  --linkcolor: var(--colorpinkdark);
+  --linkhovercolor: var(--colorpink);
   --textcolor: var(--colorblack);
   --textcolorpink: var(--colorpink);
   --textcolordark: var(--colorpinkdark);
@@ -80,11 +84,14 @@ template {
 }
 a {
   background-color: transparent;
+  color: var(--linkcolor);
+  transition: 0.3s color;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  color: var(--linkhovercolor);
 }
 abbr[title] {
   border-bottom: none;
@@ -655,6 +662,23 @@ pre tt:after {
   }
 }
 
+/* Custom Typography */
+.headline-lg {
+  font-size: 5rem;
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .headline-lg {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 700px){
+  .headline-lg {
+    font-size: 2rem;
+  }
+}
+
 /* Layout */
 .container {
   max-width: var(--widthnormal);
@@ -759,4 +783,9 @@ pre tt:after {
   .md-col-6 {
     grid-column: span 6;
   }
+}
+
+/* Box Alignment */
+.vert-align-center {
+  align-self: center;
 }

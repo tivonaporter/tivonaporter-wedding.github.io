@@ -25,8 +25,7 @@ const IndexPage = () => (
       paddingBottom: `var(--spacingxlarge)`,
     }}>
       <h5>May 15th, 2020</h5>
-      <h1 style={{
-        fontSize: `5rem`,
+      <h1 class="headline-lg" style={{
         marginTop: `2.5rem`,
         marginBottom: `2.5rem`,
       }}>Katie & Devon</h1>
@@ -206,7 +205,7 @@ const IndexPage = () => (
       </div>
     </div>
 
-    {/* bios */}
+    {/* bios
     <div class="container expanded" style={{
       textAlign: `left`,
       backgroundColor: `var(--bgcolortan)`,
@@ -226,6 +225,7 @@ const IndexPage = () => (
         />
       </div>
     </div>
+    */}
 
   </Layout>
 )

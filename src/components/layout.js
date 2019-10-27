@@ -27,15 +27,13 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          paddingTop: 0,
-        }}
-      >
+      <div class="container expanded">
         <main>{children}</main>
         <footer style={{
           textAlign: `center`,
+          backgroundColor: `white`,
+          paddingTop: `1rem`,
+          paddingBottom: `1rem`,
         }}>
           © Katie Porter and Devon Tivona, {new Date().getFullYear()}
         </footer>
