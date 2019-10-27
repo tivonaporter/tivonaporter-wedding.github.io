@@ -1,0 +1,78 @@
+/* Accomodation */
+.accomodation {
+  margin-bottom: var(--spacingsmall);
+}
+
+.accomodation p:not(:last-of-type) {
+  margin-bottom: .1rem;
+}
+
+.accomodation p:last-of-type {
+  margin-bottom: .5rem;
+}
+
+.accomodation h4 {
+  margin-top: .8rem;
+  margin-bottom: .8rem;
+}
+
+/* Agenda Item */
+.agenda-item:not(:last-child) {
+  margin-bottom: var(--spacingsmall);
+}
+
+.agenda-item h6 {
+  margin-bottom: 0;
+}
+
+.agenda-item h4 {
+  margin-top: .8rem;
+  margin-bottom: .8rem;
+}
+
+.agenda-item p {
+  margin-bottom: .3rem;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  font-size: .6rem;
+  line-height: 1rem;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  padding: .1rem .5rem;
+  border-radius: .1rem;
+  background: var(--colorgreendark);
+}
+
+.badge.badge-green {
+  background: var(--colorgreendark);
+}
+
+.badge.badge-green-light {
+  background: var(--colorgreen);
+}
+
+.badge.badge-pink {
+  background: var(--colorpinkdark);
+}
+
+.badge.badge-purple {
+  background: var(--colorpurple);
+}
+
+/* Bio */
+.bio:not(:last-of-type) {
+  margin-bottom: var(--spacingsmall);
+}
+
+/* Button */
+
+/* Cover Image */
+
+/* Detail Item */
+
+/* Header */

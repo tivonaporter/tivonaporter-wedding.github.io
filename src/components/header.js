@@ -30,7 +30,8 @@ const Header = ({ siteTitle }) => (
         </Link>
         <Button
           title="RSVP"
-          url="https://google.com"
+          target="_blank"
+          url="https://airtable.com/shrKk5SMdXzWb04VK"
         />
       </h4>
     </div>
