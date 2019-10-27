@@ -36,6 +36,8 @@ const Layout = ({ children }) => {
           paddingBottom: `1rem`,
         }}>
           © Katie Porter and Devon Tivona, {new Date().getFullYear()}
+          <br/>
+          Photography by <a href="https://allisonhammondcreative.com/" target="_blank">Allison Hammond Creative</a>
         </footer>
       </div>
     </>
