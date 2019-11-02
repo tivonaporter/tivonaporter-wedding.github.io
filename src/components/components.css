@@ -79,13 +79,29 @@
   font-weight: 700;
   text-decoration: none;
   padding: .5rem 1.5rem;
-  transition: 0.3s background-color;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn.on-dark {
+  background-color: white;
+  color: var(--linkcolor);
+}
+
+.btn:active,
+.btn:hover,
+.btn.on-dark:active,
+.btn.on-dark:hover {
+  background-color: var(--btnhovercolor);
 }
 
 .btn:active,
 .btn:hover {
-  background-color: var(--btnhovercolor);
   color: white;
+}
+
+.btn.on-dark:active,
+.btn.on-dark:hover {
+  color: var(--linkcolor);
 }
 
 /* Cover Image */

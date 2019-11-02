@@ -6,6 +6,7 @@ import Accomodation from "../components/accomodation"
 import AgendaItem from "../components/agenda-item"
 import Bio from "../components/bio"
 import CoverImage from "../components/cover-image"
+import CoverImageResp from "../components/cover-image-responsive"
 import DetailItem from "../components/detail-item"
 
 import SEO from "../components/seo"
@@ -15,31 +16,27 @@ const IndexPage = () => (
     <SEO title="Home" />
 
     {/* hero */}
-    <CoverImage/>
+    <CoverImageResp/>
 
 
     {/* header */}
-    <div class="container" style={{
+    <div class="container expanded pad-xl" style={{
       textAlign: `center`,
-      paddingTop: `var(--spacingxlarge)`,
-      paddingBottom: `var(--spacingxlarge)`,
+      backgroundColor: `var(--bgcolortan)`,
     }}>
-      <h5>May 15th, 2020</h5>
-      <h1 class="headline-lg" style={{
-        marginTop: `2.5rem`,
-        marginBottom: `2.5rem`,
-      }}>Katie & Devon</h1>
-      <p style={{
-        fontSize: `1.5rem`,
-      }}>We're getting married!</p>
+      <div class="container">
+        <h5>May 15th, 2020</h5>
+        <h1 class="headline-lg">Katie & Devon</h1>
+        <p class="large" style={{
+          marginBottom: `0`,
+        }}>We're getting married!</p>
+      </div>
     </div>
 
     {/* intro */}
-    <div class="container expanded" style={{
+    <div class="container expanded pad-lg" style={{
       textAlign: `center`,
       backgroundColor: `white`,
-      paddingTop: `var(--spacinglarge)`,
-      paddingBottom: `var(--spacinglarge)`,
     }}>
       <div class="container narrow">
         <p style={{
@@ -57,11 +54,9 @@ const IndexPage = () => (
     </div>
 
     {/* details */}
-    <div class="container expanded" style={{
+    <div class="container expanded pad-lg" style={{
       textAlign: `center`,
       backgroundColor: `var(--bgcolorpink)`,
-      paddingTop: `var(--spacinglarge)`,
-      paddingBottom: `var(--spacinglarge)`,
     }}>
       <div class="container">
         <div class="row">
@@ -86,11 +81,9 @@ const IndexPage = () => (
     </div>
 
     {/* agenda */}
-    <div class="container expanded" style={{
+    <div class="container expanded pad-lg" style={{
       textAlign: `center`,
       backgroundColor: `var(--bgcolortan)`,
-      paddingTop: `var(--spacinglarge)`,
-      paddingBottom: `var(--spacinglarge)`,
     }}>
       <div class="container">
         <h2 style={{
@@ -123,12 +116,32 @@ const IndexPage = () => (
       </div>
     </div>
 
+    {/* slack deets */}
+    <div class="container expanded pad-lg" style={{
+      textAlign: `center`,
+      backgroundColor: `var(--bgcolordark)`,
+      color: `white`,
+    }}>
+    <div class="container narrow">
+      <h2 style={{
+        marginBottom: `3rem`,
+      }}>Join us on Slack</h2>
+        <div class="row">
+          <div class="col-6">
+            <p>We made a Slack channel just for the wedding. Yay! Join us there to if you want an easy way to receive updates, get in touch with other attendees, and ask questions about the event.</p>
+            <a class="btn on-dark" href="https://join.slack.com/t/tivonaporterwedding/shared_invite/enQtODE5MjkyOTgzMzEyLTFhM2FiMjk4YzVlMmVhODczYmI0ZWI5NzViYjVjZGJkYjc5M2NkM2ExNGM2MGZjNTkyZDlhY2JiMDU5YjgyOTA" target="_blank">
+              Let's Get Slackin'
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     {/* accomodations */}
-    <div class="container expanded" style={{
+    <div class="container expanded pad-lg" style={{
       textAlign: `center`,
       backgroundColor: `white`,
-      paddingTop: `var(--spacinglarge)`,
-      paddingBottom: `var(--spacinglarge)`,
     }}>
     <div class="container">
       <h2 style={{
@@ -206,11 +219,9 @@ const IndexPage = () => (
     </div>
 
     {/* bios
-    <div class="container expanded" style={{
+    <div class="container expanded pad-lg" style={{
       textAlign: `left`,
       backgroundColor: `var(--bgcolortan)`,
-      paddingTop: `var(--spacinglarge)`,
-      paddingBottom: `var(--spacinglarge)`,
     }}>
       <div class="container">
         <Bio

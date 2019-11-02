@@ -11,7 +11,7 @@ const Accomodation = ({ badgeTitle,badgeColor,name,price,airportDist,venueDist,u
     <p>From {price} per night</p>
     <p>{airportDist} from Hotel</p>
     <p>{venueDist} from Venue</p>
-    <a href="{url}" target="_blank">Book It</a>
+    <a href="{url}" target="_blank">Book Now</a>
   </div>
 )
 

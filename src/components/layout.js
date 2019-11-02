@@ -26,19 +26,21 @@ const Layout = ({ children }) => {
 
   return (
     <>
+    <div class="wrapper">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div class="container expanded">
-        <main>{children}</main>
-        <footer style={{
-          textAlign: `center`,
-          backgroundColor: `white`,
-          paddingTop: `1rem`,
-          paddingBottom: `1rem`,
-        }}>
-          © Katie Porter and Devon Tivona, {new Date().getFullYear()}
-          <br/>
-          Photography by <a href="https://allisonhammondcreative.com/" target="_blank">Allison Hammond Creative</a>
-        </footer>
+        <div class="container expanded">
+          <main>{children}</main>
+          <footer style={{
+            textAlign: `center`,
+            backgroundColor: `white`,
+            paddingTop: `1rem`,
+            paddingBottom: `1rem`,
+          }}>
+            © Katie Porter and Devon Tivona, {new Date().getFullYear()}
+            <br/>
+            Photography by <a href="https://allisonhammondcreative.com/" target="_blank">Allison Hammond Creative</a>
+          </footer>
+        </div>
       </div>
     </>
   )

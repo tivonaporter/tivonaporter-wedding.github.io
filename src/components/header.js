@@ -5,13 +5,17 @@ import Button from "./button"
 
 const Header = ({ siteTitle }) => (
   <header class="container expanded" style={{
-      background: `var(--bgcolor)`,
-    }}>
+    background: `transparent`,
+    zIndex: `1`,
+    position: `absolute`,
+    width: `100%`,
+    maxWidth: `var(--wrapperwidth)`,
+  }}>
     <div class="row" style={{
-      padding: `1rem 1rem`,
+      padding: `1rem 2rem`,
     }}>
       <div class="col-3 vert-align-center">
-        <h4 style={{ margin: 0 }}>
+        <h4 class="hide-sm" style={{ margin: 0 }}>
           <Link
             to="/"
             style={{

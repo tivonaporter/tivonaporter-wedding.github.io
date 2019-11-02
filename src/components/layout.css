@@ -12,9 +12,12 @@
   --colorpink: #BE7E74;
   --colorpinkdark: #883D3D;
   --colorblack: #161616;
-  --bgcolor: var(--colortanlight);
+  --bgcolor: var(--colorgreendark);
+  --bgcolortan: var(--colortanlight);
   --bgcolorpink: var(--colorpinklight);
   --bgcolorgreen: var(--colorgreenlight);
+  --bgcolorpurple: var(--colorpurplelight);
+  --bgcolordark: var(--colorpurple);
   --btncolor: var(--colorpinkdark);
   --btnhovercolor: var(--colorpink);
   --linkcolor: var(--colorpinkdark);
@@ -33,6 +36,7 @@
   --widthnarrow: 700px;
   --widthnormal: 960px;
   --widthwide: 1220px;
+  --wrapperwidth: 1600px;
   --spacingxlarge: 8rem;
   --spacinglarge: 6rem;
   --spacingnormal: 4rem;
@@ -427,6 +431,11 @@ p {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+@media (min-width: 1001px) {
+  p.large {
+      font-size: 1.5rem;
+  }
+}
 figure {
   margin-left: 0;
   margin-right: 0;
@@ -665,21 +674,32 @@ pre tt:after {
 /* Custom Typography */
 .headline-lg {
   font-size: 5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 @media (min-width: 701px) and (max-width: 1000px) {
   .headline-lg {
     font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 @media (max-width: 700px){
   .headline-lg {
     font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
 /* Layout */
+.wrapper {
+  max-width: var(--wrapperwidth);
+  margin: 0 auto;
+}
+
 .container {
   max-width: var(--widthnormal);
   margin-right: auto;
@@ -700,6 +720,43 @@ pre tt:after {
   max-width: none;
   padding-right: 0;
   padding-left: 0;
+}
+
+@media (min-width: 1001px) {
+  .pad-xl {
+    padding-top: var(--spacingxlarge);
+    padding-bottom: var(--spacingxlarge);
+  }
+  .pad-lg {
+    padding-top: var(--spacinglarge);
+    padding-bottom: var(--spacinglarge);
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .pad-xl,
+  .pad-lg {
+    padding-top: var(--spacinglarge);
+    padding-bottom: var(--spacinglarge);
+  }
+}
+
+@media (max-width: 700px) and (max-width: 1000px) {
+  .pad-xl,
+  .pad-lg {
+    padding-top: var(--spacingnormal);
+    padding-bottom: var(--spacingnormal);
+  }
+}
+
+.pad {
+  padding-top: var(--spacingnormal);
+  padding-bottom: var(--spacingnormal);
+}
+
+.pd-sm {
+  padding-top: var(--spacingsmall);
+  padding-bottom: var(--spacingsmall);
 }
 
 .row {
@@ -788,4 +845,11 @@ pre tt:after {
 /* Box Alignment */
 .vert-align-center {
   align-self: center;
+}
+
+/* Utilities */
+@media (max-width: 700px) and (max-width: 1000px) {
+  .hide-sm {
+    display: none;
+  }
 }
