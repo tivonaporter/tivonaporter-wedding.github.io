@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Accommodation from "../components/accommodation"
 import AgendaItem from "../components/agenda-item"
 import Bio from "../components/bio"
+import Button from "../components/button"
 import CoverImage from "../components/cover-image"
 import CoverImageResp from "../components/cover-image-responsive"
 import DetailItem from "../components/detail-item"
@@ -38,18 +39,21 @@ const IndexPage = () => (
       textAlign: `center`,
       backgroundColor: `white`,
     }}>
-      <div class="container narrow">
+      <div class="container">
         <p style={{
           fontFamily: `var(--headlinefont)`,
           fontWeight: `300`,
           fontSize: `2rem`,
           lineHeight: `2.5rem`,
           color: `var(--textcolorpink)`,
-          marginBottom: `3rem`,
-        }}>Katie and Devon joyfully request the pleasure of your company as we speak our vows and join in marriage in the presence of family and friends.</p>
-        <p style={{
-          marginBottom: `0`,
-        }}>We'll start with the ceremony followed by a cocktail hour and dinner. Dress code will be somewhere between business casual and black tie.</p>
+          marginBottom: `2rem`,
+        }}>Katie and Devon joyfully request the pleasure of your company as they join in marriage in the presence of family and friends.</p>
+        <p>We'll start with the ceremony followed by a cocktail hour and dinner. Dress code will be semiformal.</p>
+        <Button
+          title="RSVP Online"
+          target="_blank"
+          url="https://airtable.com/shrKk5SMdXzWb04VK"
+        />
       </div>
     </div>
 
@@ -64,8 +68,8 @@ const IndexPage = () => (
             <DetailItem
               type="When"
               title="May 15th, 2020"
-              detail1="Ceremony: 4pm"
-              detail2="Dinner + Party: 6pm – 10pm"
+              detail1="Ceremony: 5pm"
+              detail2="Dinner & Party: 7pm – 11pm"
             />
           </div>
           <div class="col-6 lg-col-3">
@@ -74,6 +78,7 @@ const IndexPage = () => (
               title="Podere Palazzo"
               detail1="01021 Acquapendente"
               detail2="Province of Viterbo, Italy"
+              url="https://www.google.com/maps/place/Podere+Palazzo/@42.7968591,11.8549374,15z/data=!4m2!3m1!1s0x0:0xb51af831d950242c?sa=X&ved=2ahUKEwiH8cGHls7lAhXKqp4KHeftDBYQ_BIwE3oECA8QCA"
             />
           </div>
         </div>
@@ -218,7 +223,7 @@ const IndexPage = () => (
       </div>
     </div>
 
-    {/* bios
+    {/* bio */}
     <div class="container expanded pad-lg" style={{
       textAlign: `left`,
       backgroundColor: `var(--bgcolortan)`,
@@ -236,7 +241,8 @@ const IndexPage = () => (
         />
       </div>
     </div>
-    */}
+
+    <CoverImage/>
 
   </Layout>
 )

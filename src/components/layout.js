@@ -33,8 +33,8 @@ const Layout = ({ children }) => {
           <footer style={{
             textAlign: `center`,
             backgroundColor: `white`,
-            paddingTop: `1rem`,
-            paddingBottom: `1rem`,
+            paddingTop: `var(--spacingnormal)`,
+            paddingBottom: `var(--spacingnormal)`,
           }}>
             © Katie Porter and Devon Tivona, {new Date().getFullYear()}
             <br/>

@@ -11,8 +11,9 @@
   --colorpinklight: #D3A8A8;
   --colorpink: #BE7E74;
   --colorpinkdark: #883D3D;
+  --colorpinkdarkest: #4A0202;
   --colorblack: #161616;
-  --bgcolor: var(--colorgreendark);
+  --bgcolor: var(--colorpinkdarkest);
   --bgcolortan: var(--colortanlight);
   --bgcolorpink: var(--colorpinklight);
   --bgcolorgreen: var(--colorgreenlight);
