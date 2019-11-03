@@ -8,7 +8,7 @@ const RedFruit = () => {
     query {
       image: file(relativePath: { eq: "red-fruit.png" }) {
         childImageSharp {
-          fixed(width: 60, height: 60) {
+          fixed(width: 60, height: 60, quality: 100) {
             ...GatsbyImageSharpFixed
           }
         }

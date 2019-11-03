@@ -7,14 +7,14 @@ const CoverImageResp = () => {
     query {
       mobileImage: file(relativePath: { eq: "my-rock.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 2000, maxHeight: 800) {
+          fluid(maxWidth: 1600, maxHeight: 800, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       desktopImage: file(relativePath: { eq: "tarmac.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1200, maxHeight: 600) {
+          fluid(maxWidth: 1600, maxHeight: 800, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
