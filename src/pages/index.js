@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Accomodation from "../components/accomodation"
+import Accommodation from "../components/accommodation"
 import AgendaItem from "../components/agenda-item"
 import Bio from "../components/bio"
 import CoverImage from "../components/cover-image"
@@ -93,25 +93,25 @@ const IndexPage = () => (
             date="May 14th, 2020"
             time="2 PM"
             title="Cocktail & Swim"
-            detail="Poolside at Poderre Palazzo"
-          />
-          <AgendaItem
-            date="May 15th, 2020"
-            time="4 PM"
-            title="Ceremony"
-            detail="Lakeside at Poderre Palazzo"
+            detail="Poolside at Podere Palazzo"
           />
           <AgendaItem
             date="May 15th, 2020"
             time="5 PM"
-            title="Cocktail Hour"
-            detail="Poderre Palazzo"
+            title="Ceremony"
+            detail="Lakeside at Podere Palazzo"
           />
           <AgendaItem
             date="May 15th, 2020"
             time="6 PM"
+            title="Cocktail Hour"
+            detail="Podere Palazzo"
+          />
+          <AgendaItem
+            date="May 15th, 2020"
+            time="7 PM"
             title="Dinner & Party"
-            detail="Poderre Palazzo"
+            detail="Podere Palazzo"
           />
       </div>
     </div>
@@ -138,7 +138,7 @@ const IndexPage = () => (
     </div>
 
 
-    {/* accomodations */}
+    {/* accommodations */}
     <div class="container expanded pad-lg" style={{
       textAlign: `center`,
       backgroundColor: `white`,
@@ -146,10 +146,10 @@ const IndexPage = () => (
     <div class="container">
       <h2 style={{
         marginBottom: `3rem`
-      }}>Accomodations</h2>
+      }}>Accommodations</h2>
         <div class="row">
           <div class="col-6 md-col-3 lg-col-2">
-            <Accomodation
+            <Accommodation
               badgeTitle="Quaint"
               badgeColor="green-light"
               name="San Pietro Aquaeortus"
@@ -160,7 +160,7 @@ const IndexPage = () => (
             />
           </div>
           <div class="col-6 md-col-3 lg-col-2">
-            <Accomodation
+            <Accommodation
               badgeTitle="Mod"
               badgeColor="green"
               name="UNAWAY Hotel Fabro"
@@ -171,7 +171,7 @@ const IndexPage = () => (
             />
           </div>
           <div class="col-6 md-col-3 lg-col-2">
-            <Accomodation
+            <Accommodation
               badgeTitle="Luxe"
               badgeColor="purple"
               name="Casa Fabbrini Val D'Orcia"
@@ -182,7 +182,7 @@ const IndexPage = () => (
             />
           </div>
           <div class="col-6 md-col-3 lg-col-2">
-            <Accomodation
+            <Accommodation
               badgeTitle="Quaint"
               badgeColor="green-light"
               name="Hotel Sette Querce"
@@ -193,7 +193,7 @@ const IndexPage = () => (
             />
           </div>
           <div class="col-6 md-col-3 lg-col-2">
-            <Accomodation
+            <Accommodation
               badgeTitle="High Roller"
               badgeColor="pink"
               name="Fonteverde Spa & Hotel"
@@ -204,7 +204,7 @@ const IndexPage = () => (
             />
           </div>
           <div class="col-6 md-col-3 lg-col-2">
-            <Accomodation
+            <Accommodation
               badgeTitle="Quaint"
               badgeColor="green-light"
               name="Various Airbnbs"

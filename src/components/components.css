@@ -1,17 +1,17 @@
-/* Accomodation */
-.accomodation {
+/* accommodation */
+.accommodation {
   margin-bottom: var(--spacingsmall);
 }
 
-.accomodation p:not(:last-of-type) {
+.accommodation p:not(:last-of-type) {
   margin-bottom: .1rem;
 }
 
-.accomodation p:last-of-type {
+.accommodation p:last-of-type {
   margin-bottom: .5rem;
 }
 
-.accomodation h4 {
+.accommodation h4 {
   margin-top: .8rem;
   margin-bottom: .8rem;
 }
