@@ -7,7 +7,7 @@ const CoverImage = () => {
     query {
       image: file(relativePath: { eq: "seated-giggles.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1600, maxHeight: 800, quality: 100) {
+          fluid(maxWidth: 1600, maxHeight: 800, quality: 70) {
             ...GatsbyImageSharpFluid
           }
         }
