@@ -4,11 +4,14 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Accommodation from "../components/accommodation"
 import AgendaItem from "../components/agenda-item"
-import Bio from "../components/bio"
+//import Bio from "../components/bio"
 import Button from "../components/button"
 import CoverImage from "../components/cover-image"
 import CoverImageResp from "../components/cover-image-responsive"
-import DetailItem from "../components/detail-item"
+import DetailBlock from "../components/detail-block"
+import LinkBlock from "../components/link-block"
+import PurpleFruit from "../components/purple-fruit"
+import RedFruit from "../components/red-fruit"
 
 import SEO from "../components/seo"
 
@@ -64,8 +67,8 @@ const IndexPage = () => (
     }}>
       <div class="container">
         <div class="row">
-          <div class="col-6 lg-col-3">
-            <DetailItem
+          <div class="col-6 lg-col-3 space-bottom-md">
+            <DetailBlock
               type="When"
               title="May 15th, 2020"
               detail1="Ceremony: 5pm"
@@ -73,7 +76,7 @@ const IndexPage = () => (
             />
           </div>
           <div class="col-6 lg-col-3">
-            <DetailItem
+            <DetailBlock
               type="Where"
               title="Podere Palazzo"
               detail1="01021 Acquapendente"
@@ -223,7 +226,38 @@ const IndexPage = () => (
       </div>
     </div>
 
-    {/* bio */}
+    {/* rsvp + registry */}
+    <div class="container expanded pad-lg" style={{
+      textAlign: `center`,
+      backgroundColor: `var(--bgcolorpink)`,
+    }}>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 lg-col-3 space-bottom-md">
+            <LinkBlock
+              title="RSVP"
+              details="We hope you'll be able to join us and our friends and family on this special day. Please kindly respond online or by mail by February 1, 2020."
+              buttonText="RSVP Online"
+              url="https://airtable.com/shrKk5SMdXzWb04VK"
+            >
+              <PurpleFruit />
+            </LinkBlock>
+          </div>
+          <div class="col-6 lg-col-3">
+            <LinkBlock
+              title="Registry"
+              details="Many of you are traveling across the globe, so your presence is all we ask for. If you'd still like to contribute to our registry, we invite you to."
+              buttonText="View Registry"
+              url="https://www.zola.com/registry/devonandkatie2020"
+            >
+              <RedFruit />
+            </LinkBlock>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* bio
     <div class="container expanded pad-lg" style={{
       textAlign: `left`,
       backgroundColor: `var(--bgcolortan)`,
@@ -241,6 +275,7 @@ const IndexPage = () => (
         />
       </div>
     </div>
+    */}
 
     <CoverImage/>
 

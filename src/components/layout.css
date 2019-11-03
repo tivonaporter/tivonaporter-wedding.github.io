@@ -21,7 +21,7 @@
   --bgcolordark: var(--colorpurple);
   --btncolor: var(--colorpinkdark);
   --btnhovercolor: var(--colorpink);
-  --linkcolor: var(--colorpinkdark);
+  --linkcolor: var(--colorpinkdarkest);
   --linkhovercolor: var(--colorpink);
   --textcolor: var(--colorblack);
   --textcolorpink: var(--colorpink);
@@ -763,7 +763,7 @@ pre tt:after {
 .row {
   display: grid;
   grid-template-columns: repeat(6,1fr);
-  grid-column-gap: 2%;
+  grid-column-gap: 5%;
 }
 
 .col-1 {
@@ -849,8 +849,20 @@ pre tt:after {
 }
 
 /* Utilities */
-@media (max-width: 700px) and (max-width: 1000px) {
+@media (max-width: 700px) {
   .hide-sm {
     display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .space-bottom-sm {
+    margin-bottom: var(--spacingnormal);
+  }
+}
+
+@media (max-width: 1000px) {
+  .space-bottom-md {
+    margin-bottom: var(--spacingnormal);
   }
 }

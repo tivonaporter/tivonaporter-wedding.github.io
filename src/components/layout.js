@@ -32,6 +32,7 @@ const Layout = ({ children }) => {
           <main>{children}</main>
           <footer style={{
             textAlign: `center`,
+            fontSize: `.9rem`,
             backgroundColor: `white`,
             paddingTop: `var(--spacingnormal)`,
             paddingBottom: `var(--spacingnormal)`,

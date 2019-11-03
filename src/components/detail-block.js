@@ -1,9 +1,9 @@
 import React from "react"
 
-const DetailItem = ({type, title, detail1, detail2, url}) => {
+const DetailBlock = ({type, title, detail1, detail2, url}) => {
   var linkedDetail = <div>
     <p style={{marginBottom: `.3rem`}}>{detail1}</p>
-    <p>{detail2}</p>
+    <p style={{marginBottom: `0`}}>{detail2}</p>
   </div>
 
   if (url && url.length > 0) {
@@ -11,7 +11,7 @@ const DetailItem = ({type, title, detail1, detail2, url}) => {
   }
 
   return (
-    <div>
+    <div class="detail-block">
       <h5>{type}</h5>
       <h2>{title}</h2>
       {linkedDetail}
@@ -19,4 +19,4 @@ const DetailItem = ({type, title, detail1, detail2, url}) => {
   )
 }
 
-export default DetailItem
+export default DetailBlock
