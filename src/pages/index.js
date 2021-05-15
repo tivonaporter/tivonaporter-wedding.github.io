@@ -12,6 +12,8 @@ import DetailBlock from "../components/detail-block"
 import LinkBlock from "../components/link-block"
 import PurpleFruit from "../components/purple-fruit"
 import RedFruit from "../components/red-fruit"
+import GreenFruit from "../components/green-fruit"
+import DarkRedFruit from "../components/dark-red-fruit"
 
 import SEO from "../components/seo"
 
@@ -29,11 +31,11 @@ const IndexPage = () => (
       backgroundColor: `var(--bgcolortan)`,
     }}>
       <div class="container">
-        <h5>May 15th, 2020</h5>
+        <h5>September 4th, 2021</h5>
         <h1 class="headline-lg">Katie & Devon</h1>
         <p class="large" style={{
           marginBottom: `0`,
-        }}>We're getting married!</p>
+        }}>We're getting married (finally)!</p>
       </div>
     </div>
 
@@ -53,7 +55,7 @@ const IndexPage = () => (
         }}>Katie and Devon joyfully request the pleasure of your company as they join in marriage in the presence of family and friends.</p>
         <p>We'll start with the ceremony followed by a cocktail hour and dinner. Dress code will be semiformal.</p>
         <Button
-          title="RSVP Online"
+          title="RSVP Now"
           target="_blank"
           url="https://airtable.com/shrKk5SMdXzWb04VK"
         />
@@ -70,18 +72,18 @@ const IndexPage = () => (
           <div class="col-6 lg-col-3 space-bottom-md">
             <DetailBlock
               type="When"
-              title="May 15th, 2020"
-              detail1="Ceremony: 5pm"
-              detail2="Dinner & Party: 7pm – 11pm"
+              title="September 4th, 2021"
+              detail1="Ceremony: 4:30pm"
+              detail2="Dinner & Party: 6pm – 10pm"
             />
           </div>
           <div class="col-6 lg-col-3">
             <DetailBlock
               type="Where"
-              title="Podere Palazzo"
-              detail1="01021 Acquapendente"
-              detail2="Province of Viterbo, Italy"
-              url="https://www.google.com/maps/place/Podere+Palazzo/@42.7968591,11.8549374,15z/data=!4m2!3m1!1s0x0:0xb51af831d950242c?sa=X&ved=2ahUKEwiH8cGHls7lAhXKqp4KHeftDBYQ_BIwE3oECA8QCA"
+              title="Boulder Flower Farm"
+              detail1="4114 Oxford Road"
+              detail2="Longmont, Colorado 80503"
+              url="https://goo.gl/maps/RCKrtuXrEZJiFXLJA"
             />
           </div>
         </div>
@@ -98,131 +100,29 @@ const IndexPage = () => (
           marginBottom: `3rem`
         }}>Agenda</h2>
           <AgendaItem
-            date="May 14th, 2020"
-            time="2 PM"
-            title="Cocktail & Swim"
-            detail="Poolside at Podere Palazzo"
-          />
-          <AgendaItem
-            date="May 15th, 2020"
-            time="5 PM"
+            date="September 4th, 2021"
+            time="4:30 PM"
             title="Ceremony"
-            detail="Lakeside at Podere Palazzo"
+            detail="Boulder Flower Farm"
           />
           <AgendaItem
-            date="May 15th, 2020"
-            time="6 PM"
+            date="September 4th, 2021"
+            time="5 PM"
             title="Cocktail Hour"
-            detail="Podere Palazzo"
+            detail="Boulder Flower Farm"
           />
           <AgendaItem
-            date="May 15th, 2020"
-            time="7 PM"
+            date="September 4th, 2021"
+            time="6 PM"
             title="Dinner & Party"
-            detail="Podere Palazzo"
+            detail="Boulder Flower Farm"
           />
-      </div>
-    </div>
-
-    {/* slack deets */}
-    <div class="container expanded pad-lg" style={{
-      textAlign: `center`,
-      backgroundColor: `var(--bgcolordark)`,
-      color: `white`,
-    }}>
-    <div class="container narrow">
-      <h2 style={{
-        marginBottom: `3rem`,
-      }}>Join us on Slack</h2>
-        <div class="row">
-          <div class="col-6">
-            <p>We made a Slack channel just for the wedding. Yay! Join us there to if you want an easy way to receive updates, get in touch with other attendees, and ask questions about the event.</p>
-            <a class="btn on-dark" href="https://join.slack.com/t/tivonaporterwedding/shared_invite/enQtODE5MjkyOTgzMzEyLTFhM2FiMjk4YzVlMmVhODczYmI0ZWI5NzViYjVjZGJkYjc5M2NkM2ExNGM2MGZjNTkyZDlhY2JiMDU5YjgyOTA" target="_blank">
-              Let's Get Slackin'
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    {/* accommodations */}
-    <div class="container expanded pad-lg" style={{
-      textAlign: `center`,
-      backgroundColor: `white`,
-    }}>
-    <div class="container">
-      <h2 style={{
-        marginBottom: `3rem`
-      }}>Accommodations</h2>
-        <div class="row">
-          <div class="col-6 md-col-3 lg-col-2">
-            <Accommodation
-              badgeTitle="Quaint"
-              badgeColor="green-light"
-              name="San Pietro Aquaeortus"
-              price="$200"
-              airportDist="2 hr (178 km)"
-              venueDist="15 min (11 km)"
-              url="https://spao.it/"
-            />
-          </div>
-          <div class="col-6 md-col-3 lg-col-2">
-            <Accommodation
-              badgeTitle="Mod"
-              badgeColor="green"
-              name="UNAWAY Hotel Fabro"
-              price="$70"
-              airportDist="2 hr (168 km)"
-              venueDist="25 min (21 km)"
-              url="https://www.gruppouna.it/en/unaway/unaway-hotel-fabro"
-            />
-          </div>
-          <div class="col-6 md-col-3 lg-col-2">
-            <Accommodation
-              badgeTitle="Luxe"
-              badgeColor="purple"
-              name="Casa Fabbrini Val D'Orcia"
-              price="$240"
-              airportDist="2 hr (180 km)"
-              venueDist="30 min (22 km)"
-              url="https://agriturismo-toscana.casafabbrini.it/en/"
-            />
-          </div>
-          <div class="col-6 md-col-3 lg-col-2">
-            <Accommodation
-              badgeTitle="Quaint"
-              badgeColor="green-light"
-              name="Hotel Sette Querce"
-              price="$110"
-              airportDist="2 hr (190 km)"
-              venueDist="20 min (13 km)"
-              url="https://www.settequerce.it/en/"
-            />
-          </div>
-          <div class="col-6 md-col-3 lg-col-2">
-            <Accommodation
-              badgeTitle="High Roller"
-              badgeColor="pink"
-              name="Fonteverde Spa & Hotel"
-              price="$370"
-              airportDist="2 hr (191 km)"
-              venueDist="15 min (12 km)"
-              url="https://www.fonteverdespa.com/en/spa-tuscany/1-0.html"
-            />
-          </div>
-          <div class="col-6 md-col-3 lg-col-2">
-            <Accommodation
-              badgeTitle="Quaint"
-              badgeColor="green-light"
-              name="Various Airbnbs"
-              price="$70"
-              airportDist="1.5–2 hr"
-              venueDist="15–20 min"
-              url="https://www.airbnb.com/s/Acquapendente--VT/homes?refinement_paths%5B%5D=%2Fhomes&current_tab_id=home_tab&selected_tab_id=home_tab&screen_size=large&hide_dates_and_guests_filters=false&place_id=ChIJR80dGo06KRMRNI7XEvc5G6E&checkin=2020-05-13&checkout=2020-05-16&search_type=filter_change&adults=2"
-            />
-          </div>
-        </div>
+          <AgendaItem
+            date="September 5th, 2021"
+            time="11 AM"
+            title="Brunch"
+            detail="Sue's House"
+          />
       </div>
     </div>
 
@@ -232,12 +132,12 @@ const IndexPage = () => (
       backgroundColor: `var(--bgcolorpink)`,
     }}>
       <div class="container">
-        <div class="row">
+        <div class="row space-bottom">
           <div class="col-6 lg-col-3 space-bottom-md">
             <LinkBlock
               title="RSVP"
-              details="We hope you'll be able to join us and our friends and family on this special day. Please kindly respond online or by mail by February 1, 2020."
-              buttonText="RSVP Online"
+              details="We hope you'll be able to join us and our friends and family for this very special weekend in Colorado. Please kindly respond online by July 18, 2021."
+              buttonText="RSVP Now"
               url="https://airtable.com/shrKk5SMdXzWb04VK"
             >
               <PurpleFruit />
@@ -246,12 +146,53 @@ const IndexPage = () => (
           <div class="col-6 lg-col-3">
             <LinkBlock
               title="Registry"
-              details="Many of you are traveling across the globe, so your presence is all we ask for. If you'd still like to contribute to our registry, we invite you to."
+              details="Many of you are traveling to join us, so your presence is all we ask for. If you'd still like to contribute to our registry, we invite you to."
               buttonText="View Registry"
               url="https://www.zola.com/registry/devonandkatie2020"
             >
               <RedFruit />
             </LinkBlock>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 lg-col-3 space-bottom-md">
+            <LinkBlock
+              title="Accommodations"
+              details="We have secured a special rate of $249 per night at the Embassy Suites, and we will provide shuttle service between the hotel and the wedding venue."
+              buttonText="Book Hotel"
+              url="https://embassysuites.hilton.com/en/es/groups/personalized/D/DENBOES-PTW-20210904/index.jhtml?WT.mc_id=POG"
+            >
+              <DarkRedFruit />
+            </LinkBlock>
+          </div>
+          <div class="col-6 lg-col-3">
+            <LinkBlock
+              title="Mobile App"
+              details="Our illustrious wedding planner, Shannon Tivona, has created a mobile app with helpful wedding details, an up-to-date schedule, photo sharing, and more."
+              buttonText="Download App"
+              url="https://tivonaporter.glideapp.io/"
+            >
+              <GreenFruit />
+            </LinkBlock>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {/* COVID deets */}
+    <div class="container expanded pad-lg" style={{
+      textAlign: `center`,
+      backgroundColor: `var(--bgcolordark)`,
+      color: `white`,
+    }}>
+    <div class="container narrow">
+      <h2 style={{
+        marginBottom: `3rem`,
+      }}>COVID-19 Considerations</h2>
+        <div class="row">
+          <div class="col-6">
+            <p>Your safety is our number one priorty. Boulder Flower Farm is an outdoor venue, and we will adhere to all city and state guidelines during the event. We kindly request you plan on being fully vaccinated before attending our wedding.</p>
+            <p>Currently, we do not expect masks or social distancing to be required, but we will provide additional guidance as we get closer to our special weekend.</p>
           </div>
         </div>
       </div>

@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => (
           fontSize: `.9rem`,
         }}>Registry</a>
         <Button
-          title="RSVP"
+          title="RSVP Now"
           target="_blank"
           url="https://airtable.com/shrKk5SMdXzWb04VK"
         />

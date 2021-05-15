@@ -861,6 +861,10 @@ pre tt:after {
   }
 }
 
+.space-bottom {
+  margin-bottom: var(--spacingnormal);
+}
+
 @media (max-width: 1000px) {
   .space-bottom-md {
     margin-bottom: var(--spacingnormal);
