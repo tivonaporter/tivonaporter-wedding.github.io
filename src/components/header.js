@@ -27,7 +27,7 @@ const Header = ({ siteTitle }) => (
       <div class="col-3" style={{
         textAlign: `right`,
       }}>
-        <a href="https://www.zola.com/registry/devonandkatie2020" target="_blank" class="hide-sm" style={{
+        <a href="https://www.zola.com/registry/devonandkatie2021" target="_blank" class="hide-sm" style={{
           marginRight: `2rem`,
           fontSize: `.9rem`,
         }}>Registry</a>
